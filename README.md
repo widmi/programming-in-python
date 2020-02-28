@@ -1,6 +1,6 @@
 # Programming in Python for Machine Learning
 Hi there!
-This is an interactive tutorial on how to program in Python. I use it to teach Python for Machine Learning (ML), i.a. at the Artificial Intelligence study at the Kepler University Linz.
+This is an interactive tutorial on how to program in Python with an additional focus on Machine Learning (ML). I use it to teach Python for ML, i.a. at the Artificial Intelligence study at the Kepler University Linz.
 
 ## What awaits you here?
 - A full tutorial on how to program in Python from the beginning (bits/bytes) to programming neural networks in PyTorch.
