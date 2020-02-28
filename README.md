@@ -1,7 +1,6 @@
 # Programming in Python for Machine Learning
 Hi there!
 These are some of the materials I use to teach Python with a focus on Machine Learning (ML) at the Artificial Intelligence study, Johannes Kepler University Linz.
-I do not make any guarantees for these materials (there probably are bugs here and there).
 
 ## What awaits you here?
 - A full tutorial on how to program in Python from the beginning (bits/bytes) to programming neural networks in PyTorch.
