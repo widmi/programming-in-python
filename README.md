@@ -1,6 +1,4 @@
-# programming-in-python
-Programming in Python for Machine Learning
-
+# Programming in Python for Machine Learning
 Hi there!
 These are some of the materials I use to teach Python with a focus on Machine Learning (ML) at the Artificial Intelligence study, Johannes Kepler University Linz.
 I do not make any guarantees for these materials (there probably are bugs here and there).
