@@ -176,12 +176,17 @@ import glob
 
 # Glob supports regex-like syntax (regex will be explained in unit 07) in the
 # search pattern. We can for example use the '*' character, which matches
-# anything within a folder (excluding subfolders).
+# anything within a folder (excluding files in subfolders).
+#
 
-# This would return a list of all files and folders in the working directory:
+# This would return a list of all files in the working directory:
 found_files = glob.glob("*")
-print(f"Files and folders in the current working directory:\n"
+print(f"Files in the current working directory:\n"
       f"{found_files}")
+
+# Note that glob.glob("*") will list all files, including directories, as
+# directories are just another type of files on Unix systems
+# https://en.wikipedia.org/wiki/Directory_(computing)
 
 # This would search the working directory directory for files that end in
 # '.py':
@@ -207,3 +212,10 @@ print(f"Files ending in '.py' in the working directory and its subdirectories:\n
 # in ".py":
 dirname = 'some_folder'
 found_files = glob.glob(os.path.join(dirname, '**', '*.py'), recursive=True)
+
+# glob.glob will return the found files in the order the OS would sort them. It
+# is necessary to sort the list of files explicitly to have a consistently
+# sorted list:
+dirname = 'some_folder'
+found_files = glob.glob(os.path.join(dirname, '**', '*.py'), recursive=True)
+found_files.sort()  # sort the list of files in-place
