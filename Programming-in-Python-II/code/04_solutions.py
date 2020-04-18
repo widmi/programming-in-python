@@ -111,3 +111,33 @@ cluster_mask = hbdscan_labels == 5
 samples_by_clusters = list(zip(folder_names[cluster_mask],
                                file_names[cluster_mask]))
 print(f"First 100 files to inspect:\n{samples_by_clusters[:100]}")
+
+#
+# Task 05
+#
+
+# Normalize a numpy array to range [0, 1]
+array = np.random.randint(0, 256, size=(50, 40, 3), dtype=np.uint8)
+
+# Your code here #
+array = np.array(array, dtype=np.float)  # uint8 will not work for divisions
+array -= array.min()  # -> range [0, max]
+array /= array.max()  # -> range [0, 1]
+
+print(f"normalized array is in range [{array.min()}, {array.max()}]")
+
+#
+# Task 06
+#
+
+# Normalize a numpy array to range [-1, 1]
+array = np.random.randint(0, 256, size=(50, 40, 3), dtype=np.uint8)
+
+# Your code here #
+array = np.array(array, dtype=np.float)  # uint8 will not work for divisions
+array -= array.min()  # -> range [0, max]
+array /= (array.max() / 2)  # -> range [0, 2]
+array -= 1  # -> range [-1, 1]
+
+print(f"normalized array is in range [{array.min()}, {array.max()}]")
+

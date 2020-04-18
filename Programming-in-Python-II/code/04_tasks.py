@@ -87,3 +87,22 @@ folder_names = loaded['folder_names']
 file_names = loaded['file_names']
 
 # Your code here #
+
+#
+# Task 05
+#
+
+# Normalize a numpy array to range [0, 1]
+array = np.random.randint(0, 256, size=(50, 40, 3), dtype=np.float)
+
+# Your code here #
+
+#
+# Task 06
+#
+
+# Normalize a numpy array to range [-1, 1]
+array = np.random.randint(0, 256, size=(50, 40, 3), dtype=np.float)
+
+# Your code here #
+
