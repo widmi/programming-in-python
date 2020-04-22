@@ -24,7 +24,7 @@ more information on the tasks.
 """
 
 #
-# Task 1
+# Task 01
 #
 
 # Write a function that converts a color image, represented as numpy array of
