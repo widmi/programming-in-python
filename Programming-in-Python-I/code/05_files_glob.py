@@ -196,9 +196,9 @@ print(f"Files and folders ending in '.py' in the current working directory:\n"
 
 # To search for files and folders recursively (=in all subdirectories), you can
 # use two '*' characters and set the argument recursive=True. "**" will then
-# match all subdirectory names.
+# match all subdirectory names (including the current working directory).
 found_files = glob.glob('**', recursive=True)
-print(f"Files and folders in the working directory and its subdirectories:\n"
+print(f"Match working directory and all its recursive contents:\n"
       f"{found_files}")
 
 # Search in a directory and in all subdirectories for files ending in ".py":
