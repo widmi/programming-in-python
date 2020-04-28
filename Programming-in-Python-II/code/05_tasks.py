@@ -67,7 +67,7 @@ batch_as_list_2 = [(np.random.uniform(size=(np.random.randint(low=1, high=10), 3
 # `(one_hot_feat, label)`.
 # `one_hot_feat` is a numpy array of shape `(n_features=3,)`,
 # containing only the indices of the 1-entries in the one-hot feature vector.
-# The full one-hot feature vector should have shape `(3, 11)`.
+# The full one-hot feature matrix should have shape `(3, 11)`.
 # `label` is a numpy array of shape `(2, 2)`.
 # The mini-batch entries for `one_hot_feat` should be stacked in the first
 # dimension as full one-hot feature vectors.
